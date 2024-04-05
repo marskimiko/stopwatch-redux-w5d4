@@ -11,7 +11,7 @@ const stopwatchSlice = createSlice({
     START_TIMER: (state) => {
       state.isRunning = true;
     }, 
-    PAUSE_TIME: (state) => {
+    PAUSE_TIMER: (state) => {
       state.isRunning = false;
     },
     RESET_TIMER: (state) => {

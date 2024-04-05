@@ -17,11 +17,11 @@ const Stopwatch = () => {
         dispatch(INCREMENT_TIME());
       }, 10);
     }
-    return () => clearInterval(intervalId);
+    return () => clearInterval(intervalIdRef.current);
   }, [isRunning]);
 
   useEffect(() => {
-    return () => clearInterval(intervalId);
+    return () => clearInterval(intervalIdRef.current);
   }, []);
 
   const toggleRunning = () => {
